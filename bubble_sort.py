@@ -6,8 +6,8 @@ def buble_sort(arr):
     for i in range(n):
         for j in range(0, n-i):
             # Swap if the element found is greater than the next element
-            if arr[j] > arr[j+1]:
-                arr[j], arr[j+1] = arr[j+1], arr[j]
+            if arr[i] > arr[j+1]:
+                arr[i], arr[j+1] = arr[j+1], arr[i]
     return arr
 
 def process_file(filename):
